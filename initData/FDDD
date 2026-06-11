@@ -1,0 +1,33 @@
+%-------------------------------------------------------%
+%		natural parameters of bulk phases				%
+%		lines starting with % are comments				%
+%		must have spaces around the equal sign "="		%
+%-------------------------------------------------------%
+
+%-------------------------------------------------------%
+%	dimensionality, computational box, and symmetry 	%
+%-------------------------------------------------------%
+
+dimPhy			= 3		% the dimensionality of physical space;
+dimCpt			= 3		% the dimensionality of computational space;
+nfold			= 1		% symmetry;	only work for quasicrystals;
+
+boxType			= cuboid	% the type of computational box; cube, cuboid, hex;
+
+boxVal			= 0.866025403784439		0.433012701892219		0.25
+
+
+%-------------------------------------------------------%
+%	initial values of bulk phases in reciprocal space	%
+%-------------------------------------------------------%
+
+initNum			= 7		% the number of initial spectral points;
+
+initVal			=
+ 1	 1	 1	-0.3  0.0
+ 1	 1	-1	 0.3  0.0
+ 1	-1	 1	 0.3  0.0
+ 1	-1	-1	 0.3  0.0
+ 0	 2	 2	-0.3  0.0
+ 0	 2	-2	 0.3  0.0
+ 0	 0	 4	 0.3  0.0
